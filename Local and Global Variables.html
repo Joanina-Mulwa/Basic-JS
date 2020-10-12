@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local and global variables</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.writeln("Global and Local Variables" + "</br>"+"</br>");
+
+//global Variables
+//used both inside the function it i declared in and outside interval.
+      document.writeln("Global Variables"+"</br>");
+      var name = "globalVariable";
+      function global()
+      {
+        document.writeln("Inside the function: "+name+"</br>");
+
+      }
+       global();
+       document.writeln("Outside the function: " + name + "</br>"+"</br>");
+
+//local Variables
+//used only inside the function it is declared in
+      document.writeln("Local Variables"+"</br>");
+      function local()
+      {
+        var names="localVariables";
+        document.writeln("Inside the function only: " + names + "</br>");
+      }
+      local();
+      //this printout statement will not be printed out since names is a local ariable and can only be used inside the function "local" it is declared in
+        document.writeln("Outside the function which cannot work: " + names + "</br>");
+      </script>
+    </body>
+</html>

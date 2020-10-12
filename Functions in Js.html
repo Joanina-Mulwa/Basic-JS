@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <title>Functions in javascript.</title>
+ </head>
+   <body>
+      <script type="text/javascript">
+//We have a button and on clicking it, it should display a pop up
+        document.writeln("FUNCTIONS"+"</br>");
+
+//No parameters
+        function ShowPopUp()
+        {
+
+          alert("OOps");
+        }
+
+
+//Single parameter
+        function list(x)
+        {
+          alert("I love "+x);
+        }
+        //calling function list.
+        list("JS");
+        list("HTML");
+
+
+//multiple parameters
+        function addition(a,b)
+        {
+        alert(a+b);
+        }
+
+//calling function fro another function
+        function first()
+        {
+        document.writeln("Heey!");
+        }
+    //fumction that calls function "first"
+        function callFirst()
+        {
+          first();
+        }
+    //calling function caller. callFirst
+        callFirst();
+
+      </script>
+    <form>
+<!--Calling function "ShowPopUp" when the button is clicked-->
+     <input type="button" name="alert" value="Click Me" onclick="ShowPopUp()">
+      </br>
+      </br>
+<!--Calling function "Sum" when button is clicked-->
+    <input type="button" name="alert" value="Sum" onclick="addition(10,10)">
+     </br>
+     </br>
+
+    </form>
+  </body>
+</html>
